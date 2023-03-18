@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  color: white;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #312e81;
+}
+.container {
+  padding: 40px;
+  margin: 0 auto;
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#calander {
+  /* we used here display grid because we want our day divs next to each other*/
+  display: grid;
+  grid-template-columns: repeat(7, 150px);
+  gap: 3px;
+  /* it means 7 column in 1 row  and each column have 150px with*/
+}
+.day {
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+  background-color: #636691;
+  border-radius: 5px;
+  transition: all 250ms;
+}
+.day:hover {
+  background-color: #4f46e5;
+}
